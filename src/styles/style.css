@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}style
+
+blockquote,
+q {style
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Import */
+
+
+/* Variáveis */
+
+:root {
+    --color-purple: #8B22F4;
+    --color-font-gray: #181818;
+    --color-bg-gray: #333633;
+    --color-purple-clean: #EAE7EC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Menu */
+
+menu {
+    width: 100%;
+    height: 4.2rem;
+
+    display: flex;
+
+    background-color: var(--color-bg-gray);
+
+    align-items: center;
+    justify-content: start;
+}
+
+menu nav {
+    margin-left: 1rem;
+    align-items: center;
+}
+
+menu nav ul li {
+    display: inline-block;
+    transition: color .3s;
+    
+    position: relative;
+    align-items: center;
+    
+    text-decoration: none;
+    
+    margin-left: 2rem;
+    text-transform: uppercase;style
+
+}
+
+menu nav ul li #menu-options {
+    display: none;
+    list-style: none;
+    list-style-type: none;
+
+    gap: 1rem;
+
+}
+
+
+
+menu nav ul li #menu-options a {
+
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    color: var(--color-purple);
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+menu nav ul li:hover #menu-options {
+    display: block;
+    background-color: var(--color-bg-gray);
+    position: absolute;
+    
+    width: 50rem;
+    height: 5rem;
+       
+}
+
+menu nav #menu-options li::after {
+    content: '';
+    display: inline-block;
+
+    width: 10%;
+    height: 2px;
+
+    background: var(--color-purple);
+
+
+    transition: width .5s ease-in-out;
+}
+
+menu nav #menu-options li:hover::after {
+    width: 100%;
+
+}
+
+
+/* Header */
+
+.base {
+    width: 100%;
+    height: 30.5rem;
+
+    background-color: var(--color-purple);
+
+    align-items: center;
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+    
+    
+    
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 4rem;
+    gap: 3rem;
+}
+
+/* Title area */
+.text {
+    
+    align-items: center;
+    color: var(--color-font-gray)
+    
+}
+
+#title {
+    font-size: 6.55rem;
+    font-family: 'DM Serif Display', sans-serif;
+    
+}
+
+#subtitle {
+    font-size: 1.48rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes-sociais {
+   display: flex;
+   gap: 0.6rem;
+   
+}
+
+* [id$=-logos] {
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-purple-clean);
+    
+    border-radius: 1rem;
+
+}
+
+* [id$=-logos]:hover {
+    background-color: #d2acf8;
+    
+    top: -4px;
+    box-shadow: 0 .2rem .2rem .2rem #1818184b;
+    transition: all .2s ease-in-out
+}
+
+
+
+/* About area */
+
+.aboutme-area {
+    height: 30.5rem;
+
+    display: flex;
+    
+    background-image: linear-gradient(to right, rgb(90, 21, 158), rgba(86, 16, 155, 0));
+
+    border-radius: 30rem 0 0 30rem;
+    justify-content: space-evenly;
+}
+
+.aboutme-itens {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    margin-left: 1.5rem;
+    
+    
+}
+
+#AP-image {
+    width: 25rem;
+    
+    border-radius: 30rem 5rem 5rem 30rem;
+}
+
+.languages {
+    width: 43.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1.5rem;
+    
+}
+
+.languages h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-purple);
+    
+    text-transform: uppercase;
+}
+
+#nodejs-logo svg {
+    width: 6rem;
+    height: 6rem;
+}
+
+#css-logo svg {
+    width: 6rem;
+}
+
+* [id$=-logo] {
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: relative
+
+    
+    
+}
+
+* [id$=-logo]:hover { 
+    top: -2px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+* [id$=-content] {
+    height: 4rem;
+    width: 13.5rem;
+
+    display: flex;
+    align-items: center;
+    
+    background-color: #E9D5FD;
+
+    border-radius: 3rem;
+    gap: 1rem;
+}
+
+* [id$=-graphic] {
+    display: flex;
+    
+    justify-content: center;
+}
+
+* [id$=point] {
+    width: 4rem;
+    height: 4rem;
+    
+    background-color: #181818;
+    
+    border-radius: 2rem;
+}
+
+/* main area-posts */

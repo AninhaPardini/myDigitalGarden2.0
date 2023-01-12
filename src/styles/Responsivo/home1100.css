@@ -1,0 +1,122 @@
+@media (max-width: 1100px) and (min-width: 600px) {
+    
+    /* title area */
+
+    .base {
+        width: 69vh;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .title-area {
+        margin-left: 2rem;
+    }
+
+    #title {
+        font-size: 5rem;
+    }
+
+    #subtitle {
+        font-size: 1.3rem;
+    }
+
+    .redes-sociais {
+        position: absolute;
+        top: .2rem;
+        left: 43rem;
+        
+    }
+
+    .redes-sociais svg {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    #AP-image {
+        display: none;
+    }
+
+    /* aboutme area */
+
+    .aboutme-area {
+        height: 30.5rem;
+        
+        display: flex;
+    
+        background-image: linear-gradient(to right, rgb(90, 21, 158), rgba(86, 16, 155, 0));
+    
+        border-radius: 30rem 0 0 30rem;
+        justify-content: end;
+
+    }
+
+    .languages {
+        width: 30.5rem;
+        display: block;
+        justify-content: center;
+    }
+
+    .languages h3 {
+        font-size: 1rem;
+    }
+
+
+
+    #nodejs-logo svg {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    
+    #css-logo svg {
+        width: 3.2rem;
+    }
+
+    #python-logo svg {
+        width: 3.2rem;
+    }
+
+   * [id$=-logo] svg {
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+    }
+
+    * [id$=-logo] {
+
+        height: 4rem;
+        width: 15rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+    
+    * [id$=-content] {
+        height: 3rem;
+        width: 11rem;
+
+        display: flex;
+        align-items: center;
+
+        background-color: #E9D5FD;
+
+        border-radius: 3rem;
+        gap: 1rem;
+    }
+    * [id$=-graphic] {
+        display: flex;
+
+        
+    }   
+
+    * [id$=point] {
+        width: 3rem;
+        height: 3rem;
+
+        background-color: #181818;
+
+        border-radius: 2rem;
+    }
+}
+
